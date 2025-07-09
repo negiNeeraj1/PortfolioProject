@@ -62,7 +62,7 @@ const Projects = () => {
         "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=200&fit=crop",
       technologies: ["React", "Tailwind CSS", "Framer Motion"],
       category: "frontend",
-      liveUrl: "#",
+      liveUrl: "https://portfolio-project-lemon-five.vercel.app/",
       githubUrl: "#",
     },
     {
