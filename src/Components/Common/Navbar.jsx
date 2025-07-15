@@ -7,10 +7,6 @@ import ThemeToggle from '../Ui/ThemeToggle';
 const Navbar = () => {
 
    const navigate = useNavigate();
-  
-
-    
-
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
   const { darkMode } = useTheme();
@@ -63,7 +59,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Portfolio
+              NSN.
             </h1>
           </div>
           
