@@ -70,10 +70,10 @@ const Projects = () => {
       id: 6,
       title: "Chat Application",
       description:
-        "Real-time chat application with user authentication, group chats, file sharing, and emoji support.",
+        "Real-time chat application with Socket.io featuring message broadcasting, emoji picker, connection status, and responsive WhatsApp-inspired design.",
       image:
         "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=400&h=200&fit=crop",
-      technologies: ["React", "Socket.io", "Node.js", "Express"],
+      technologies: ["HTML", "Socket.io", "Node.js", "Express","CSS"],
       category: "fullstack",
       liveUrl: "#",
       githubUrl: "#",
