@@ -1,7 +1,11 @@
 
 import { Code, Database, Brain, Smartphone } from 'lucide-react';
 
+<<<<<<< HEAD
 const Skill = () => {
+=======
+const Skill = ({ isVisible = false }) => {
+>>>>>>> 9cbbacf (ADDED ABOUT SECTION 3D)
 
      const skills = [
     {
@@ -48,7 +52,18 @@ const Skill = () => {
             {skills.map((skill, index) => (
               <div
                 key={index}
+<<<<<<< HEAD
                 className="group bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105"
+=======
+                className={`group bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-700 hover:transform hover:scale-105 transform ${
+                  isVisible 
+                    ? 'translate-y-0 opacity-100 scale-100' 
+                    : 'translate-y-10 opacity-0 scale-95'
+                }`}
+                style={{
+                  transitionDelay: `${1800 + index * 300}ms`
+                }}
+>>>>>>> 9cbbacf (ADDED ABOUT SECTION 3D)
               >
                 <div className={`inline-flex p-3 rounded-lg bg-gradient-to-r ${skill.color} text-white mb-4 group-hover:scale-110 transition-transform duration-300`}>
                   {skill.icon}
@@ -62,7 +77,18 @@ const Skill = () => {
                   {skill.items.map((item, itemIndex) => (
                     <div
                       key={itemIndex}
+<<<<<<< HEAD
                       className="flex items-center gap-2 text-gray-600 dark:text-gray-400"
+=======
+                      className={`flex items-center gap-2 text-gray-600 dark:text-gray-400 transform transition-all duration-500 ${
+                        isVisible 
+                          ? 'translate-x-0 opacity-100' 
+                          : 'translate-x-[-10px] opacity-0'
+                      }`}
+                      style={{
+                        transitionDelay: `${2000 + index * 200 + itemIndex * 100}ms`
+                      }}
+>>>>>>> 9cbbacf (ADDED ABOUT SECTION 3D)
                     >
                       <span className="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
                       {item}
@@ -76,4 +102,8 @@ const Skill = () => {
   )
 }
 
+<<<<<<< HEAD
 export default Skill
+=======
+export default Skill;
+>>>>>>> 9cbbacf (ADDED ABOUT SECTION 3D)
