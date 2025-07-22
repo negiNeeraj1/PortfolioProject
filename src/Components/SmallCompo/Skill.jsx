@@ -25,7 +25,7 @@ const Skill = ({ isVisible = false }) => {
     {
       category: "AI/ML",
       icon: <Brain className="w-6 h-6" />,
-      items: ["Python", "Numpy", "Pandas", "Matplotlib"],
+      items: ["Python", "Numpy", "Pandas", "Matplotlib", "Scikit-learn"],
       color: "from-purple-500 to-pink-500",
     },
 
