@@ -22,23 +22,18 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://github.com/negiNeeraj1"
                 className="p-2 bg-gray-800 dark:bg-gray-700 rounded-full hover:bg-blue-600 transition-colors duration-300"
               >
                 <Github size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/neeraj-singh-negi-/"
                 className="p-2 bg-gray-800 dark:bg-gray-700 rounded-full hover:bg-blue-600 transition-colors duration-300"
               >
                 <Linkedin size={20} />
               </a>
-              <a
-                href="#"
-                className="p-2 bg-gray-800 dark:bg-gray-700 rounded-full hover:bg-blue-600 transition-colors duration-300"
-              >
-                <Mail size={20} />
-              </a>
+             
             </div>
           </div>
 

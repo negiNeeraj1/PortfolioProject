@@ -225,7 +225,7 @@ const Projects = () => {
       } else {
         console.log("Auto-play paused - user interacting");
       }
-    }, 4000);
+    }, 2000);
   }, [filteredProjects.length, isHovered, isDragging]);
 
   const stopAutoPlay = () => {
@@ -576,15 +576,6 @@ const Projects = () => {
             isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           }`}
         >
-          <p className="text-sm text-gray-500 dark:text-gray-400">
-            Use arrow keys, drag, or click controls to navigate • Space to
-            pause/play
-          </p>
-          <div className="flex justify-center gap-4 text-xs text-gray-400 dark:text-gray-500">
-            <span>← → Navigate</span>
-            <span>Space Pause/Play</span>
-            <span>Drag to rotate</span>
-          </div>
         </div>
       </div>
     </section>
@@ -592,3 +583,5 @@ const Projects = () => {
 };
 
 export default Projects;
+
+
