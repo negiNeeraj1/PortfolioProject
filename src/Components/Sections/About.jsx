@@ -2,7 +2,7 @@ import { Code, Database, Brain, Smartphone } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import Skill from "../SmallCompo/Skill";
-
+import { GlowingCards, GlowingCard } from "../Ui/glowing-cards";
 // --- Animation Variants (can be shared) ---
 
 // Parent container variants for staggering children
