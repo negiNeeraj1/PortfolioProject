@@ -1,11 +1,18 @@
-import React from 'react';
-import { Github, Linkedin, Mail, Download, ArrowDown, Twitter, Instagram } from 'lucide-react';
-import TypingAnimation from '../Ui/TypingAnimation';
-import PersonalPhoto from '../../Images/PersonalPhoto.jpg'; 
-import { useNavigate } from 'react-router-dom';
-import { useTheme } from '../../Context/ThemeContext';
-import { AuroraTextEffect } from '../Ui/aurora-text-affect'; // Adjust path as needed
-
+import React from "react";
+import {
+  Github,
+  Linkedin,
+  Mail,
+  Download,
+  ArrowDown,
+  Twitter,
+  Instagram,
+} from "lucide-react";
+import TypingAnimation from "../Ui/TypingAnimation";
+import PersonalPhoto from "../../Images/PersonalPhoto.jpg";
+import { useNavigate } from "react-router-dom";
+import { useTheme } from "../../Context/ThemeContext";
+import { AuroraTextEffect } from "../Ui/aurora-text-affect"; // Adjust path as needed
 
 const Hero = () => {
   const typingTexts = [
@@ -13,27 +20,30 @@ const Hero = () => {
     "AI/ML Enthusiast",
     "Problem Solver",
     "Software Developer",
-    "Freelancer"
+    "Freelancer",
   ];
 
   const scrollToAbout = () => {
-    document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+    document.getElementById("about").scrollIntoView({ behavior: "smooth" });
   };
-  
+
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = React.useState(false); // Added missing state
 
   const handleNavigation = (path) => {
-    if (window.location.pathname === path) {  
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (window.location.pathname === path) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
       navigate(path);
-    } 
+    }
     setIsOpen(false);
-  }
+  };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-gray-800 transition-colors duration-300">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center bg-transparent transition-colors duration-300"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -42,7 +52,7 @@ const Hero = () => {
               <h2 className="text-lg font-medium text-gray-600 dark:text-gray-400">
                 Hello, I'm
               </h2>
-              
+
               {/* Aurora Text Effect for Name */}
               <AuroraTextEffect
                 text="Neeraj Singh Negi"
@@ -65,17 +75,21 @@ const Hero = () => {
                 }}
               />
             </div>
-            
+
             <div className="text-xl md:text-2xl text-gray-700 dark:text-gray-300">
               I'm a <TypingAnimation texts={typingTexts} />
             </div>
-            
+
             <p className="text-gray-600 dark:text-gray-400 max-w-lg mx-auto lg:mx-0 leading-relaxed">
-              Passionate about creating innovative web applications and exploring the endless possibilities of artificial intelligence and machine learning technologies.
+              Passionate about creating innovative web applications and
+              exploring the endless possibilities of artificial intelligence and
+              machine learning technologies.
             </p>
-            
-            <h2 className="text-xl md:text-xl font-bold text-gray-900 dark:text-white">FIND ME ON</h2>
-            
+
+            <h2 className="text-xl md:text-xl font-bold text-gray-900 dark:text-white">
+              FIND ME ON
+            </h2>
+
             {/* Social Links */}
             <div className="flex justify-center lg:justify-start space-x-4">
               <a
@@ -103,12 +117,12 @@ const Hero = () => {
                 <Instagram size={20} />
               </a>
             </div>
-            
+
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <button
                 onClick={() => {
-                  handleNavigation('/about')
+                  handleNavigation("/about");
                 }}
                 className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
               >
@@ -116,7 +130,7 @@ const Hero = () => {
               </button>
             </div>
           </div>
-          
+
           {/* Right Image */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
@@ -138,7 +152,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        
+
         {/* Scroll Down Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <button

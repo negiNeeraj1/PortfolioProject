@@ -1,6 +1,24 @@
 @import "tailwindcss";
 
-body{
+/* Light mode background: hex fallback then oklab */
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f7f5f0, #e8e0d2, #d9ccb5, #c0b499);
+  background: linear-gradient(
+    180deg,
+    oklab(97% 0 0.007),
+    oklab(90.9% 0.003 0.02),
+    oklab(85% 0.005 0.034),
+    oklab(77.3% 0.002 0.039)
+  );
+}
+
+/* Dark mode background: matches original section styles (gray-900 → gray-800) */
+.dark body {
+  background: linear-gradient(180deg, #111827, #1f2937);
+}
+
+body {
   font-family: "Poppins", sans-serif;
 }
 @custom-variant dark (&:where(.dark, .dark *));
