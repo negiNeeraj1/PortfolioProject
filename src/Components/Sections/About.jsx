@@ -62,7 +62,7 @@ const About = () => {
       viewport={{ once: true, amount: 0.2 }}
       variants={containerVariants}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
         <motion.div className="text-center mb-16" variants={itemVariants}>
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
             About Me
