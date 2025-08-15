@@ -13,7 +13,7 @@ import PersonalPhoto from "../../Images/PersonalPhoto.jpg";
 import { useNavigate } from "react-router-dom";
 import { useTheme } from "../../Context/ThemeContext";
 import { AuroraTextEffect } from "../Ui/aurora-text-affect"; // Adjust path as needed
-import ProfileCard from "@/Components/Ui/Profilecard";
+import ProfileCard from "../Ui/profilecard";
 const Hero = () => {
   const typingTexts = [
     "MERN Stack Developer",
