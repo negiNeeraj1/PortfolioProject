@@ -13,7 +13,7 @@ import PersonalPhoto from "../../Images/PersonalPhoto.jpg";
 import { useNavigate } from "react-router-dom";
 import { useTheme } from "../../Context/ThemeContext";
 import { AuroraTextEffect } from "../Ui/aurora-text-affect"; // Adjust path as needed
-import CenteredImageCard from "@/Components/Ui/Profilecard";
+import ProfileCard from "@/Components/Ui/Profilecard";
 const Hero = () => {
   const typingTexts = [
     "MERN Stack Developer",
@@ -133,7 +133,7 @@ const Hero = () => {
 
           {/* Right Content - CenteredImageCard */}
           <div className="flex justify-center lg:justify-end">
-            <CenteredImageCard 
+            <ProfileCard 
               img={PersonalPhoto}
               name="Neeraj Singh Negi"
               bio="Passionate MERN Stack Developer creating innovative web applications and exploring AI/ML technologies."
