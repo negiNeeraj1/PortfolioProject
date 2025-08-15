@@ -34,3 +34,6 @@ This project is for personal use. Please do not copy, distribute, or use without
 
 ##
 I used LightsWind ui Library to add the aurora effect in my Name Neeraj Singh Negi 
+
+##
+used some pre built components from this library :https://scrollx-ui.vercel.app/

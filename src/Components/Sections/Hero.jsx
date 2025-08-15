@@ -13,7 +13,7 @@ import PersonalPhoto from "../../Images/PersonalPhoto.jpg";
 import { useNavigate } from "react-router-dom";
 import { useTheme } from "../../Context/ThemeContext";
 import { AuroraTextEffect } from "../Ui/aurora-text-affect"; // Adjust path as needed
-
+import CenteredImageCard from "@/components/Ui/profilecard";
 const Hero = () => {
   const typingTexts = [
     "MERN Stack Developer",
@@ -131,25 +131,42 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Image */}
+          {/* Right Content - CenteredImageCard */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative">
-              <div className="w-80 h-80 bg-gradient-to-br from-blue-400 to-purple-600 rounded-full animate-pulse"></div>
-              <div className="absolute inset-4 bg-white dark:bg-gray-800 rounded-full shadow-xl flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-48 h-48 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <img
-                      src={PersonalPhoto}
-                      alt="Personal"
-                      className="w-full h-full object-cover rounded-full"
-                    />
-                  </div>
-                  <p className="text-gray-600 dark:text-gray-400 font-medium">
-                    Software Developer
-                  </p>
-                </div>
-              </div>
-            </div>
+            <CenteredImageCard 
+              img={PersonalPhoto}
+              name="Neeraj Singh Negi"
+              bio="Passionate MERN Stack Developer creating innovative web applications and exploring AI/ML technologies."
+              skills={[
+                { 
+                  name: "JavaScript", 
+                  iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" 
+                },
+                { 
+                  name: "React", 
+                  iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" 
+                },
+                { 
+                  name: "Node.js", 
+                  iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" 
+                },
+                { 
+                  name: "MongoDB", 
+                  iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" 
+                },
+                { 
+                  name: "TailwindCSS", 
+                  iconUrl: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" 
+                },
+                { 
+                  name: "Python", 
+                  iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" 
+                }
+              ]} 
+              githubUrl="https://github.com/negiNeeraj1"
+              twitterUrl="https://x.com/negi_neeraj29"
+              position="MERN Stack Developer"
+            />
           </div>
         </div>
 

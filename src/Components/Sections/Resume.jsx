@@ -8,7 +8,7 @@ const Resume = () => {
   const handleDownloadCV = () => {
     // For files in public folder, use direct path
     const link = document.createElement('a');
-    link.href = '/NeerajSinghNegiUpdatedResume2.0.pdf';
+    link.href = '/NeerajSinghNegiResume.pdf';
     link.download = 'Neeraj_Singh_Negi_Resume.pdf';
     link.click();
   };
@@ -109,7 +109,7 @@ const Resume = () => {
                 <div className="bg-gray-50 dark:bg-gray-900 rounded-xl p-8 min-h-[800px] flex items-center justify-center">
                     {/* PDF iframe display */}
                     <iframe
-                      src="/NeerajSinghNegiUpdatedResume2.0.pdf"
+                      src="/NeerajSinghNegiResume.pdf"
                       width="100%"
                       height="800"
                       className="border border-gray-300 dark:border-gray-600 rounded-lg"
