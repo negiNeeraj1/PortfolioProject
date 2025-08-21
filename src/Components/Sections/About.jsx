@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import Skill from "../SmallCompo/Skill";
 import { GlowingCards, GlowingCard } from "../Ui/glowing-cards";
-import Spline from '@splinetool/react-spline';
+import Spline from "@splinetool/react-spline";
 // --- Animation Variants (can be shared) ---
 
 // Parent container variants for staggering children
@@ -39,6 +39,8 @@ const listItemVariants = {
     transition: { duration: 0.5, ease: "easeInOut" },
   },
 };
+
+
 
 // --- About Component ---
 
@@ -195,9 +197,9 @@ const About = () => {
 
         {/* Skills Section */}
         <Skill isVisible={isVisible} />
-     
       </div>
     </motion.section>
+
   );
 };
 
