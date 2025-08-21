@@ -165,7 +165,7 @@ const Hero = () => {
               ]} 
               githubUrl="https://github.com/negiNeeraj1"
               twitterUrl="https://x.com/negi_neeraj29"
-              position="MERN Stack Developer"
+              
             />
           </div>
         </div>
