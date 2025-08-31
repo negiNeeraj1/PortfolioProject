@@ -214,6 +214,18 @@ const Projects = () => {
       liveUrl: "#",
       githubUrl: "#",
     },
+    {
+      id: 7,
+      title: "ecoLearn",
+      description:
+        "Gamified environmental education platform with interactive quizzes, achievement rankings, and daily challenges to promote eco-awareness through engaging learning experiences.",
+      image:
+        "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=250&fit=crop",
+      technologies: ["MongoDB", "Express", "React", "Node.js", "AI Integration"],
+      category: "fullstack",
+      liveUrl: "https://hexaforce-sih-front.onrender.com/",
+      githubUrl: "https://github.com/negiNeeraj1/HEXAFORCE_SIH",
+    }
   ];
 
   const filters = [
