@@ -237,8 +237,17 @@ const Projects = () => {
         category: "ai",
         liveUrl: "https://github.com/negiNeeraj1/VirtualMouse",
         githubUrl: "https://github.com/negiNeeraj1/VirtualMouse",
+    },
+    {
+      id: 10,
+      title:"Mini OS Simulator",
+      description:"Integrated File Management and Process Management showing functionality of an Operating System.",
+      image:"https://messages-prod.27c852f3500f38c1e7786e2c9ff9e48f.r2.cloudflarestorage.com/52a756b9-b578-4341-b43e-c42e74f0d35a/1759921792200-0199c383-404e-77bf-ba4a-b616f58709ad.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=c86e09ae0bc1d897b03dfaa30a8b51f3%2F20251008%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251008T110952Z&X-Amz-Expires=3600&X-Amz-Signature=083f8de630c2f5092e258115878ac1de3fcccd80d13c7edb52e51b9bb1d15210&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject"
+    ,  technologies:["React","Tailwind CSS","JavaScript","Node.js","Express"],
+     category:"fullstack",
+     liveUrl:"https://github.com/negiNeeraj1/os-simulator123",
+     githubUrl:"  https://github.com/negiNeeraj1/os-simulator123" 
     }
-
   ];
 
   const filters = [
