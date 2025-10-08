@@ -154,6 +154,7 @@ const Projects = () => {
       liveUrl: "#",
       githubUrl: "#",
     },
+
     {
       id: 7,
       title: "Face Expression Recognition",
@@ -215,7 +216,7 @@ const Projects = () => {
       githubUrl: "#",
     },
     {
-      id: 7,
+      id: 8,
       title: "ecoLearn",
       description:
         "Gamified environmental education platform with interactive quizzes, achievement rankings, and daily challenges to promote eco-awareness through engaging learning experiences.",
@@ -225,7 +226,19 @@ const Projects = () => {
       category: "fullstack",
       liveUrl: "https://hexaforce-sih-front.onrender.com/",
       githubUrl: "https://github.com/negiNeeraj1/HEXAFORCE_SIH",
+    },
+    {
+      id: 9,
+      title: "Virtual Mouse Using Hand Gesture Recognition",
+      description:
+        "A virtual mouse application that uses hand gesture recognition to control the cursor and perform click actions, providing an innovative way to interact with computers.",
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2hfg8e8R6NJGdciJ1lRbxXozwIAZOQqKzhA&s",
+        technologies: ["Python", "OpenCV", "Mediapipe"],
+        category: "ai",
+        liveUrl: "https://github.com/negiNeeraj1/VirtualMouse",
+        githubUrl: "https://github.com/negiNeeraj1/VirtualMouse",
     }
+
   ];
 
   const filters = [
